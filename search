@@ -1,0 +1,9 @@
+find . -name '*.c' -o -name '*.f' | xargs grep "qextname" >> search_result_main_.txt
+
+
+#find executable and cut out ./ in the front of line
+find . |xargs file |grep 'executable'|cut -d':' -f1 | cut -c3-
+
+find . |xargs file |grep executable|cut -d\: -f1 |gawk '{print $1}'
+
+

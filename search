@@ -4,6 +4,9 @@ find . -name '*.c' -o -name '*.f' | xargs grep "qextname" >> search_result_main_
 #find executable and cut out ./ in the front of line
 find . |xargs file |grep 'executable'|cut -d':' -f1 | cut -c3-
 
+#not working, just kept as a reference
 find . |xargs file |grep executable|cut -d\: -f1 |gawk '{print $1}'
 
-
+#bulk rename everything
+# / is command for replace
+for i in *; do mv "$i" "${i/hf_/}"; done 

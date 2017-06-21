@@ -1,0 +1,29 @@
+crudini
+
+vm:
+    gmt
+    pyPDF
+
+src: uses binary in tools
+    -gmt
+    -fault_seg2gsf
+    -probably more, need testing
+    -plotting data from Hypo
+        /home/nesi00213/PlottingData/
+obs:
+    gmt
+    module named matplotlib.mlab
+
+Instructions:
+  Everyone: !!!!!!!!!!!!!!     source /home/jonney/20170519_faketown_m5p5_201705291600/path.sh !!!!!!!!!!!!!!
+  VM:     1. cd /home/jonney/20170519_faketown_m5p5_201705291600/VM
+          2. config_vm.py mag centroidDepth lon lat
+          3. test_vm_params.py (if params_vel.py edited)
+          4. make_vm.sh
+  Source: 1. cd /home/jonney/20170519_faketown_m5p5_201705291600/Src
+          2. config_src.py
+          3. make_src.sh
+  Obs:    1. cd /home/jonney/20170519_faketown_m5p5_201705291600/GM/Obs
+          2. config_obs.py geoNet_ftp_url
+          3. make_obs.sh
+

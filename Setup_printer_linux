@@ -1,5 +1,5 @@
 For Ubuntu
-1. make sure you have SAMBA installed ( using 'man samba' should do the trick)
+1. make sure you have SAMBA installed*(see notes below)
 2. Go to the printer setting in Ubuntu
 3. Press Add printer
 4. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
@@ -11,8 +11,17 @@ For Ubuntu
 10. select the correct driver. (MP 3053 for room-322)
 done, print a test page.
 
+*******enabling samba for cups******
+to ensure that Cups can add a printer via SAMBA, these packages has to be installed:
+libsmbclient
+smbclient
+python-smbc
 
-*For users not using Ubuntu
+install them if not, and restart the cups service:
+sudo service cups restart
+************************************
+
+For users not using Ubuntu
 1. make sure you have SAMBA installed  
 2. go to 'Cups' admin page on a web browser: http://localhost:631/admin
 3. Press Add printer ( if a login prompt, use the 'root' user/password)

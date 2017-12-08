@@ -1,8 +1,15 @@
-1.Add printer via 'Windows Printer via SAMBA'
-2.for smb address type in:"smb://UCPRINT1.CANTERBURY.AC.NZ/"
-3.press 'Browse' to search the domain for printers
-4.a authentication should promt, enter your user login/pwd for canterbury, and UOCNT for domain.
-5.Find the Room name for desired location ( ENCI-322 for postgrad room)
-6.set Authentications details. use 'UOCNT\user' for username, and the pwd for canterbury login.
-7.select the correct driver. (MP 3053 for room-322)
+1. Go to the printer setting in Ubuntu
+2. Press Add printer
+3. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
+4. Enter smb address :"smb://UCPRINT1.CANTERBURY.AC.NZ/"
+5. press 'Browse' to search the domain for printers
+6. a authentication should promt, enter your user login/pwd for canterbury, and UOCNT for domain.
+5. Find the Room name for desired location ( ENCI-322 for postgrad room)
+6. set Authentications details. use 'UOCNT\user' for username, and the pwd for canterbury login.
+7. select the correct driver. (MP 3053 for room-322)
 done, print a test page.
+
+*Note: if you have trouble searching for the address for printers ( not using the Ubuntu)
+you can insert the address directly for a specific printer
+for ENCI-322 use: 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E322'
+for ENCI-419 use: 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P2' or 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P1'

@@ -11,18 +11,19 @@ For Ubuntu
 done, print a test page.
 
 
-*For users not using Ubuntu 
-1. go to Cups admin page: http://localhost:631/admin
-2. Press Add printer
-3. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
-3. enter the connection : "smb://UOCNT\username:password@printeradress "
+*For users not using Ubuntu
+1. make sure you have SAMBA installed  
+2. go to 'Cups' admin page on a web browser: http://localhost:631/admin
+3. Press Add printer ( if a login prompt, use the 'root' user/password)
+4. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
+5. enter the connection : "smb://UOCNT\username:password@printeradress "
 As for the printer address:
 for ENCI-322 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E322'
 for ENCI-419 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P2' or 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P1'
-4. enter the description you want (just do that you know which one you are using to print)
-5. under 'Make' select : 'Ricoh'
-6.Choose the correct Model for the printer
-ENCI-322:Ricoh MP 3053
-ENCI-419(color printer)" Ricoh MP C3503
-7.ignore extra options, press 'set Default value'
+6. enter the description you want (just do that you know which one you are using to print)
+7. under 'Make' select : 'Ricoh'
+8.Choose the correct Model for the printer
+ENCI-322: Ricoh MP 3053
+ENCI-419(color printer): Ricoh MP C3503
+9.ignore extra options, press 'set Default value'
 done, try print a test page.

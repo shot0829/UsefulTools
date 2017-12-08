@@ -1,3 +1,4 @@
+For Ubuntu
 1. Go to the printer setting in Ubuntu
 2. Press Add printer
 3. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
@@ -9,7 +10,19 @@
 7. select the correct driver. (MP 3053 for room-322)
 done, print a test page.
 
-*Note: if you have trouble searching for the address for printers ( not using the Ubuntu)
-you can insert the address directly for a specific printer
-for ENCI-322 use: 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E322'
-for ENCI-419 use: 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P2' or 'smb://UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P1'
+
+*For users not using Ubuntu 
+1. go to Cups admin page: http://localhost:631/admin
+2. Press Add printer
+3. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
+3. enter the connection : "smb://UOCNT\username:password@printeradress "
+As for the printer address:
+for ENCI-322 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E322'
+for ENCI-419 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P2' or 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P1'
+4. enter the description you want (just do that you know which one you are using to print)
+5. under 'Make' select : 'Ricoh'
+6.Choose the correct Model for the printer
+ENCI-322:Ricoh MP 3053
+ENCI-419(color printer)" Ricoh MP C3503
+7.ignore extra options, press 'set Default value'
+done, try print a test page.

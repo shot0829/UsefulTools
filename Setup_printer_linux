@@ -37,3 +37,42 @@ ENCI-322: Ricoh MP 3053
 ENCI-419(color printer): Ricoh MP C3503
 9.ignore extra options, press 'set Default value'
 done, try print a test page.
+
+
+
+
+------------------------------------------------------
+            Settiing up FollowYou printer
+------------------------------------------------------
+For Ubuntu
+1. make sure you have SAMBA installed*(see notes below)
+2. Go to the printer setting in Ubuntu
+3. Press Add printer
+4. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
+5. Enter smb address :"smb://PRINT.CANTERBURY.AC.NZ/" or "smb://UCPRINT3.CANTERBURY.AC.NZ/"
+(both represents the same IP)
+6. press 'Browse' to search the domain for printers
+7. a authentication should promt, enter your user login/pwd for canterbury, and UOCNT for domain8. Select "FollowYou-Colour" (or "FollowYou-BlackAndWhite" for b&w only prints)
+9. set Authentications details. use 'UOCNT\user' for username, and the pwd for canterbury login.10. select the correct driver.( 'Richo MP C3503' for 'FollowYou-Colour' / 'Richo MP 3053' for "FollowYou-BlackAndWhite")
+
+Done, print a test page. it will shown as a file waiting to be printed when you login into FollowYou printer.
+
+
+For user not using Ubuntu
+1. make sure you have SAMBA installed
+2. go to 'Cups' admin page on a web browser: http://localhost:631/admin
+3. Press Add printer ( if a login prompt, use the 'root' user/password)
+4. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
+5. enter the connection : "smb://UOCNT\username:password@printeradress "
+for colour printer: PRINT.CANTERBURY.AC.NZ/FollowYou-Colour
+for b&w printer: PRINT.CANTERBURY.AC.NZ/FollowYou-BlackAndWhite
+6. enter the description you want (just do that you know which one you are using to print)
+7. under 'Make' select : 'Ricoh'
+8. Choose the correct Model for the printer
+colour: Richo MP C3503
+b&w: Ricoh MP 3053
+9. ignore extra options, press 'set Default value'
+
+Done, print a test page. it will shown as a file waiting to be printed when you login into a FollowYou printer.
+
+

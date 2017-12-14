@@ -30,7 +30,7 @@ For users not using Ubuntu
 As for the printer address:
 for ENCI-322 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E322'
 for ENCI-419 use: 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P2' or 'UCPRINT1.CANTERBURY.AC.NZ/ENCI-E419-P1'
-6. enter the description you want (just do that you know which one you are using to print)
+6. enter the description you want (just so that you know which one you are using to print)
 7. under 'Make' select : 'Ricoh'
 8.Choose the correct Model for the printer
 ENCI-322: Ricoh MP 3053
@@ -66,7 +66,7 @@ For user not using Ubuntu
 5. enter the connection : "smb://UOCNT\username:password@printeradress "
 for colour printer: PRINT.CANTERBURY.AC.NZ/FollowYou-Colour
 for b&w printer: PRINT.CANTERBURY.AC.NZ/FollowYou-BlackAndWhite
-6. enter the description you want (just do that you know which one you are using to print)
+6. enter the description you want (just so that you know which one you are using to print)
 7. under 'Make' select : 'Ricoh'
 8. Choose the correct Model for the printer
 colour: Richo MP C3503

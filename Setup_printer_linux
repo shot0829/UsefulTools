@@ -65,7 +65,7 @@ For user not using Ubuntu
 4. choose 'Windows Printer via SAMBA' under 'Other Network Printers'
 5. enter the connection : "smb://UOCNT\username:password@printeradress "
 for colour printer: PRINT.CANTERBURY.AC.NZ/FollowYou-Colour
-for b&w printer: PRINT.CANTERBURY.AC.NZ/FollowYou-BlackAndWhite
+for b&w printer: PRINT.CANTERBURY.AC.NZ/FollowYou-BlackandWhite
 6. enter the description you want (just so that you know which one you are using to print)
 7. under 'Make' select : 'Ricoh'
 8. Choose the correct Model for the printer

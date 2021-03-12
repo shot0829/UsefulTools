@@ -2,7 +2,6 @@ git_bin=`which git`
 function git () {
     if [[ $1 == 'add' ]];then
         args_list=${@:2}
-        echo $args_list
         for i in $args_list;
         do
             if [[ $i == *.py ]];then
